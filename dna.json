@@ -1,0 +1,14 @@
+{
+  "_version": 0,
+  "_project": "bimo2/bimo2",
+  "scripts": {
+    "vscode:install": {
+      "info": "Install VSCode theme",
+      "commands": [
+        "cd vscode/themes && yarn clean && yarn build",
+        "sudo rm -rf $HOME/.vscode/extensions/bimo2.vscode-theme",
+        "sudo cp -r ./vscode/themes $HOME/.vscode/extensions/bimo2.vscode-theme"
+      ]
+    }
+  }
+}
