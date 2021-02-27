@@ -20,7 +20,8 @@
       {
         "id": "bimo2-vscode-icon-theme",
         "label": "bimo2",
-        "path": "./dist/icons.json"
+        "path": "./dist/icons.json",
+        "_watch": true
       }
     ]
   }
