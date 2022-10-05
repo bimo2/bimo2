@@ -1,0 +1,27 @@
+{
+  "name": "vscode-theme",
+  "displayName": "bimo2",
+  "description": "Extension for GitHub VSCode theme",
+  "version": "0.1.0",
+  "private": true,
+  "publisher": "Bimal Bhagrath",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist preview",
+    "build": "yarn clean && node ./bin/build.js",
+    "preview": "node ./bin/preview.js"
+  },
+  "type": "module",
+  "contributes": {
+    "iconThemes": [
+      {
+        "id": "bimo2-icon-theme",
+        "label": "bimo2",
+        "path": "./dist/icons.json"
+      }
+    ]
+  }
+}

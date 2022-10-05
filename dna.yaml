@@ -1,0 +1,24 @@
+---
+_dna: 0
+project: bimo2/bimo2
+
+dependencies:
+  Node.js:
+    - node
+    - yarn
+
+scripts:
+  vs:install:
+    info: Install Visual Studio Code theme
+    run:
+      - "cd vscode/theme && yarn build"
+      - "sudo rm -rf ~/.vscode/extensions/bimo2.vscode-theme"
+      - "sudo cp -r ./vscode/theme ~/.vscode/extensions/bimo2.vscode-theme"
+
+  vs:preview:
+    info: Preview Visual Studio Code theme
+    run: "cd vscode/theme && yarn preview"
+
+  vs:clean:
+    info: Delete cache and build files
+    run: "cd vscode/theme && yarn clean"
